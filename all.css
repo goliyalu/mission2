@@ -67,12 +67,6 @@ table {
 	top:0;
 	z-index: 5;
   }
-  /* @media(max-width:992px){
-	.header{
-	position: fixed;
-	top:0;
-	margin-bottom: 100px;}
-} */
   .header-inner{
 	display: flex;
 	margin: 0 auto;
@@ -80,6 +74,12 @@ table {
 	padding-top: 32px;
 	padding-bottom: 32px;
   }
+  @media(max-width:992px){
+	.header-inner{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
   .logo{
 	margin-left: 318px;
   }
@@ -142,6 +142,8 @@ table {
   @media(max-width:992px){
 	.title{
 		flex-direction: column;
+		margin-top: 30px;
+		padding-top: 40px;
 	}
 }
 h1{
