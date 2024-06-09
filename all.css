@@ -82,7 +82,6 @@ table {
 }
   .logo{
 	margin-left: 312px;
-	margin-right: 318px;
   }
   @media(max-width:992px){
 	.logo{
@@ -93,7 +92,7 @@ table {
 	width: 100%;
 	display: flex;
 	gap: 40px;
-	/* justify-content: center; */
+	justify-content: center;
   }
   @media(max-width:992px){
 	.menu{
@@ -174,8 +173,7 @@ table {
   .main{
 	margin: 0 auto;
 	width: 670px;
-	padding-top: 80px;
-	padding-bottom: 24px;
+	padding:59px 71px;
 	position: relative;
   }
   @media(max-width:992px){
@@ -186,28 +184,30 @@ table {
   .main::before{
 	position: absolute;
 	content: "";
-	width: 100%;
-	height: 100%;
+	width: 72px;
+	height: 72px;
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true);
 	background-repeat: no-repeat;
-	top:20px;
+	top:0;
 	left:0;
   }
   @media(max-width:992px){
 	.main::before{
-	top:0;
+	top:-20px;
 	left:40%;
+	width: 64px;
+	height: 64px;
 	}
 }
   .main::after{
 	position: absolute;
 	content: "";
-	width: 100%;
-	height: 100%;
+	width: 72px;
+	height: 72px;
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true);
 	background-repeat: no-repeat;
-	top:135px;
-	left:600px;
+	right:0;
+	bottom:0;
   }
   @media(max-width:992px){
 	.main::after{
