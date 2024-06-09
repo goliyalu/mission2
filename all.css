@@ -81,7 +81,8 @@ table {
 	}
 }
   .logo{
-	margin-left: 318px;
+	margin-left: 312px;
+	margin-right: 318px;
   }
   @media(max-width:992px){
 	.logo{
@@ -92,7 +93,7 @@ table {
 	width: 100%;
 	display: flex;
 	gap: 40px;
-	justify-content: center;
+	/* justify-content: center; */
   }
   @media(max-width:992px){
 	.menu{
@@ -136,7 +137,7 @@ table {
 .title{
 	margin: 0 auto;
 	background: #FAFAFA;
-	width: 100%;
+	/* width: 100%; */
 	margin-top: 80px;
   }
   @media(max-width:992px){
@@ -146,15 +147,6 @@ table {
 		padding-top: 40px;
 	}
 }
-h1{
-	text-align: center;
-	font-size: 24px;
-	line-height: 28.8px;
-	color: #1E1E1E;
-	padding-bottom: 16px;
-	margin-left: 70px;
-	font-weight: bold;
-  }
   .underline{
     position: relative;
     z-index:0;}
@@ -170,6 +162,14 @@ h1{
 	left: 0;
 	top: 0;
 	z-index:-1
+  }
+  h1{
+	text-align: center;
+	font-size: 24px;
+	line-height: 28.8px;
+	color: #1E1E1E;
+	padding-bottom: 16px;
+	font-weight: bold;
   }
   .main{
 	margin: 0 auto;
@@ -190,13 +190,13 @@ h1{
 	height: 100%;
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true);
 	background-repeat: no-repeat;
-	top:30px;
-	left:30px;
+	top:20px;
+	left:0;
   }
   @media(max-width:992px){
 	.main::before{
 	top:0;
-	left:50%;
+	left:40%;
 	}
 }
   .main::after{
@@ -207,7 +207,7 @@ h1{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true);
 	background-repeat: no-repeat;
 	top:135px;
-	left:610px;
+	left:600px;
   }
   @media(max-width:992px){
 	.main::after{
@@ -219,7 +219,6 @@ h1{
 	display: flex;
 	margin: 0 auto;
 	padding-bottom: 80px;
-	padding-left: 70px;
 	padding-top: 24px;
   }
   @media(max-width:992px){
@@ -255,13 +254,14 @@ h1{
 }
 /* content */
 .content{
-	width: 1296px;
+	/* width: 1296px; */
 	margin: 0 auto;
+	padding-left: 20px;
   }
   @media(max-width:992px){
 	.content{
 		width: 100%;
-		padding-left: 25px;
+		/* padding-left: 25px; */
 	}
 }
   .work-list{
@@ -269,7 +269,6 @@ h1{
 	flex-wrap:wrap;
 	justify-content: center;
 	margin-top: 120px;
-	/* border:2px solid #000000; */
   }  
   @media(max-width:992px){
 	.work-list{
@@ -279,13 +278,12 @@ h1{
 	}
 }
   .work{
-	width: 48%;
+	width: 50%;
 	padding-right: 24px;
-	/* border:2px solid #000000; */
   }  
     @media(max-width:992px){
 	.work{
-		width: 90%;
+		width: 100%;
 	}
 }
   .work-body{
